@@ -1,1 +1,23 @@
+#banner{
+    height:200px; 
+    background: aquamarine;
+    border:black;
+    margin-bottom: 20px;
+}
 
+input[type="button"]{
+    
+    width: 150px;
+    height: 40px;
+    background: #3cc1c1;
+    margin-bottom: 30px;
+    white-space: normal;
+    
+}
+
+#contenedor_botones{
+    margin-top: 20px;
+    background:#717f7f;
+    width: 200px;
+    
+}
