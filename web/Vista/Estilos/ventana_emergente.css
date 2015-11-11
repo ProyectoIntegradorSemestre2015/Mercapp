@@ -1,0 +1,43 @@
+#formulario_anadir{
+    visibility: hidden;
+    background: white;
+    height: 450px;
+    width: 650px;  
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+#contenedor_izquierda{
+    float: left;
+    margin-bottom: 150px;
+    width: 300px;
+    height: 200px;
+}
+
+#contenedor_derecha{
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+
+}
+#limpiarizquierda{
+    height: 20px;
+}
+#limpiarderecha{
+    height: 55px;
+}
+#guardar_promocion{
+    float: right;
+    
+}
+
+#titulo_anadir{
+    height: 80px;
+    width: 500px;
+    margin-bottom:50px;
+    margin-left: 50px;
+    background-image: url('../imagenes/titulo.png');
+}
+

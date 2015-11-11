@@ -1,17 +1,18 @@
 #banner{
     height:200px; 
-    background: blue;
+    width: 200px;
     border:black;
     margin-bottom: 20px;
+    padding-left: 450px;
 }
 
 button{
-
     width: 150px;
     height: 40px;
     background: #3cc1c1;
     margin-bottom: 30px;
     white-space: normal;
+    font-family: 'Arial', serif;
 
 }
 
@@ -27,16 +28,9 @@ iframe{
     height: 350px;
     width: 800px;
 }
-#formulario_anadir{
-    visibility: hidden;
-    background: white;
-    height: 500px;
-    width: 500px;    
-}
 
-#titulo_anadir{
-    height: 80px;
-    width: 500px;
-    background-image: url('../imagenes/titulo.png');
-}
 
+
+p{
+    font-family: 'Arial', serif;
+}
