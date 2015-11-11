@@ -1,23 +1,42 @@
 #banner{
     height:200px; 
-    background: aquamarine;
+    background: blue;
     border:black;
     margin-bottom: 20px;
 }
 
-input[type="button"]{
-    
+button{
+
     width: 150px;
     height: 40px;
     background: #3cc1c1;
     margin-bottom: 30px;
     white-space: normal;
-    
+
 }
 
 #contenedor_botones{
     margin-top: 20px;
-    background:#717f7f;
     width: 200px;
-    
+    float: left;
+
 }
+
+iframe{
+    float: left;  
+    height: 350px;
+    width: 800px;
+}
+#formulario_anadir{
+    visibility: hidden;
+    background: white;
+    height: 500px;
+    width: 500px;    
+}
+
+#titulo_anadir{
+    height: 80px;
+    width: 500px;
+    background-image: url('../imagenes/titulo.png');
+}
+

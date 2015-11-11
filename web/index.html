@@ -10,17 +10,32 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="Vista/Estilos/pagina_inicio.css" >
+        <script src="Vista/Js/jquery-1.11.3.min.js"></script>
+        <script src="Vista/Js/jquery.bpopup-0.11.0.min.js"></script>
+        <script src="Vista/Js/ventanaEmergente.js"></script>
+
+
+
     </head>
     <body>
         <div id="contenedor">
             <div id="banner"></div>
             <div id="contenedor_botones">
-                <input type="button" id="consultar_promocion" value="Ver todas las promociones"><br>
-                <input type="button" id="añadir_promocion" value="a&ntilde;adir promociones"><br>
-                <input type="button" id="eliminar_promocion" value="Eliminar promociones"><br>
-                <input type="button" id="reporte_promocion" value="Generar reporte de promociones">
-            </div>
 
+                <button onclick="parent.framecentro.location = 'Vista/promociones.html'" id="consultar_promocion">Ver todas las promociones</button><br>
+                <button id="anadir_promocion">A&ntilde;adir promociones</button><br>
+                <button onclick="parent.framecentro.location = 'Vista/eliminarPromociones.html'" id="eliminar_promocion">Eliminar promociones</button><br>
+                <button onclick="parent.framecentro.location = 'Vista/promociones.html'" id="reporte_promocion">Generar reporte de promociones</button><br>
+
+            </div>
+            <div id="formulario_anadir">
+                <div id="titulo_anadir"></div>
+                <p>C&oacute;digo: <input type="text" name=""><p>
+                <p>Descripci&oacute;n:<input type="text" name=""><p>
+                <p>Fecha: <input type="date" name=""><p>
+
+            </div>
+            <iframe  name="framecentro"></iframe>
 
         </div>
     </body>
