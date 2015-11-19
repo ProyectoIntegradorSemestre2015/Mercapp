@@ -11,7 +11,7 @@ $(function() {
             url: "../eliminarPromociones.jsp",
             success: function(html) {
                 $('#promocionUno').html(html);
-                //alert(html);
+                alert(html);
 
             },
             beforeSend: function() {
