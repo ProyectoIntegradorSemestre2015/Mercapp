@@ -21,7 +21,8 @@ $(function() {
             $('#formulario_anadir').fadeOut('slow');
         });
 
-
+  
+  
     });
 
 
