@@ -12,41 +12,49 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="Vista/Estilos/pagina_inicio.css" >
         <link rel="stylesheet" type="text/css" href="Vista/Estilos/ventana_emergente.css" >
         <script src="Vista/Js/jquery-1.11.3.min.js"></script>
+        <script src="Vista/Js/jquery-1.8.2.js"></script>
+        <script src="Vista/Js/jquery-ui.js"></script>
         <script src="Vista/Js/jquery.bpopup-0.11.0.min.js"></script>
         <script src="Vista/Js/ventanaEmergente.js"></script>
-
+        <script src="Vista/Js/eliminarPromociones.js"></script>
 
 
     </head>
     <body>
         <div id="contenedor">
-            <div id="banner"><img src="Vista/imagenes/titleSgp.png" id="xxx1" alt=""></div>
+            <div id="logotipo">
+                <div id="banner">
+                    <img src="Vista/imagenes/titleSgp.png" id="title" alt="">
+                </div>
+
+            </div>
+
             <div id="contenedor_botones">
 
                 <button onclick="parent.framecentro.location = 'Vista/promociones.html'" id="consultar_promocion">Ver todas las promociones</button><br>
                 <button id="anadir_promocion">A&ntilde;adir promociones</button><br>
-                <button onclick="parent.framecentro.location = 'Vista/eliminarPromociones.html'" id="eliminar_promocion">Eliminar promociones</button><br>
+                <button type="submit" onclick="parent.framecentro.location = 'Vista/eliminarPromociones.html'" id="eliminar_promocion">Eliminar promociones</button><br>
                 <button onclick="parent.framecentro.location = 'Vista/promociones.html'" id="reporte_promocion">Generar reporte de promociones</button><br>
 
             </div>
             <div id="formulario_anadir">
                 <div id="titulo_anadir"></div>
                 <div id="contenedor_izquierda">
-                    <p>C&oacute;digo: <input type="text" name=""><p>
-                    <p>Descripci&oacute;n:<input type="text" name=""><p>
+                    <p>Producto: <select id="seleccion_producto"></select></p>  
+                    <p>Descripci&oacute;n: <input type="text" name=""><p>
                     <p>Fecha de inicio: <input type="date" name=""><p>
                     <p>Descuento: <input type="number" name=""><p>
-                        <div id="limpiarizquierda"></div>
-                        <button id="guardar_promocion" >Guardar</button>
+                    <div id="limpiarizquierda"></div>
+                    <button id="guardar_promocion" >Guardar</button>
                 </div>
 
                 <div id="contenedor_derecha">
                     <p>Nombre:<input type="text" name=""><p>
                     <p>Fecha finalización: <input type="date" name=""><p>
-                    <p>Medida: <input type="number" name=""><p>
-                        <div id="limpiarderecha"></div>
-                        <button id="cancelar_promocion">Cancelar</button>
-                    
+                    <p>Medida: <input type="number" name=""><p>  
+                    <div id="limpiarderecha"></div>
+                    <button id="cancelar_promocion">Cancelar</button>
+
                 </div>
 
             </div>
