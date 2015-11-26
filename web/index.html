@@ -20,7 +20,7 @@ and open the template in the editor.
 
 
     </head>
-    
+
     <body>
         <div id="contenedor">
             <div id="logotipo">
@@ -34,7 +34,7 @@ and open the template in the editor.
 
                 <button onclick="parent.framecentro.location = 'Vista/promociones.html'" id="consultar_promocion">Ver todas las promociones</button><br>
                 <button id="anadir_promocion">A&ntilde;adir promociones</button><br>
-                <button type="submit" onclick="parent.framecentro.location = 'Vista/eliminarPromociones.html'" id="eliminar_promocion">Eliminar promociones</button><br>
+                <button id="eliminar_promocion">Eliminar promociones</button><br>
                 <button onclick="parent.framecentro.location = 'Vista/promociones.html'" id="reporte_promocion">Generar reporte de promociones</button><br>
 
             </div>
@@ -42,20 +42,51 @@ and open the template in the editor.
                 <div id="titulo_anadir"></div>
                 <div id="contenedor_izquierda">
                     <p>Producto: <select id="seleccion_producto"></select></p>  
-                    <p>Descripci&oacute;n: <input type="text" name=""><p>
+                    <p>Descripci&oacute;n: <textarea type="text" id=""></textarea><p>
                     <p>Fecha de inicio: <input type="date" name=""><p>
                     <p>Descuento: <input type="number" name=""><p>
                     <div id="limpiarizquierda"></div>
                     <button id="guardar_promocion" >Guardar</button>
                 </div>
-
                 <div id="contenedor_derecha">
                     <p>Nombre:<input type="text" name=""><p>
-                    <p>Fecha finalización: <input type="date" name=""><p>
+                    <p>Fecha finalizaci&oacute;n: <input type="date" name=""><p>
                     <p>Medida: <input type="number" name=""><p>  
                     <div id="limpiarderecha"></div>
                     <button id="cancelar_promocion">Cancelar</button>
-
+                </div>
+                <!-- Parte nueva,  agregada por marcela calderón en 
+                    Es la ventana emergente para el diseño de eliminar 
+                    promociones donde aparecera una tabla con promociones existentes
+                    y segun su codigo el usuario digite en un campo de texto el codigo y elimine
+                    la promoción
+                -->
+                <div id="formulario_eliminar">
+                    <div id="titulo_eliminar"></div>
+                    <div id="contenedor_tabla_promociones">                        
+                        <table id="tabla_promociones">
+                            
+                                <tr>
+                                    <th>Cod. promoci&oacute;n</th>
+                                    <th>Cod. producto</th>
+                                    <th>Tipo promoci&oacute;</th>
+                                    <th>Inicio Promoci&oacute;</th>
+                                    <th>Fin promoci&oacute;</th>
+                                    <th>Descripci&oacute;</th>
+                                    <th>Lugar promoci&oacute;</th>
+                                </tr>
+                            
+                            <tr><td>12345</td><td>22345</td><td>Mensaul</td><td>30/11/2015</td><td>31/11/2105</td><td>Jabon Dove: Lleve 3X2; peso: 35gr c/u ,</td><td>Villamaria</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>12345</td><td>22345</td><td>Mensaul</td><td>30/11/2015</td><td>31/11/2105</td><td>Jabon Dove: Lleve 3X2; peso: 35gr c/u ,</td><td>Villamaria</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>12345</td><td>22345</td><td>Mensaul</td><td>30/11/2015</td><td>31/11/2105</td><td>Jabon Dove: Lleve 3X2; peso: 35gr c/u ,</td><td>Villamaria</td></tr>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            
+                        </table>
+                    </div>
+                    <p>Cod. producto a eliminar: <input type="text"></p>
+                    <button id="btneliminar_promocion_ventana" >Eliminar</button>
                 </div>
 
             </div>

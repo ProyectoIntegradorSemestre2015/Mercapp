@@ -15,14 +15,24 @@ $(function() {
 
 
         $('#cancelar_promocion').on('click', function(e) {
-            
+
             //document.getElementsByClassName(".b-modal __b-popup1__").style.opacity = 0.1;
-           // $(".b-modal").css("opacity",0);
+            // $(".b-modal").css("opacity",0);
             $('#formulario_anadir').fadeOut('slow');
         });
 
-  
-  
+
+
+    });
+
+    $('#eliminar_promocion').on('click', function(e) {
+        // Prevenir la acción por defecto
+        e.preventDefault();
+
+        // Se lanza el método bPopup 
+        $('#formulario_eliminar').bPopup();
+        document.getElementById('formulario_eliminar').style.visibility = 'visible';
+
     });
 
 
